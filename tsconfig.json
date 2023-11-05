@@ -1,0 +1,29 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"useDefineForClassFields": true,
+		"lib": ["DOM", "DOM.Iterable", "ESNext"],
+		"allowJs": false,
+		"skipLibCheck": true,
+		"esModuleInterop": false,
+		"allowSyntheticDefaultImports": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"module": "ESNext",
+		"types": ["webpack-env"],
+		"moduleResolution": "Node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": true,
+		"importHelpers": true,
+		"jsxImportSource": "@emotion/react",
+		"jsx": "react-jsx",
+		"baseUrl": "./modules/",
+		"newLine": "lf",
+		"paths": { "@/libs/*": ["libs/"] }
+	},
+	"exclude": ["/node_modules/", "**/node_modules", "**/.*/"],
+	"include": ["./modules", "./libs"]
+}
+
+//todo: typescript - настроить относительные пути в корне

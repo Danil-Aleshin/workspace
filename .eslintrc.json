@@ -1,0 +1,103 @@
+{
+	"env": {
+		"browser": true,
+		"es6": true,
+		"node": true
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"plugin:@typescript-eslint/recommended"
+	],
+	"overrides": [],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaVersion": "latest",
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"plugins": ["react", "@typescript-eslint", "react-hooks"],
+	"rules": {
+		"react-hooks/exhaustive-deps": "warn",
+		"react/no-unknown-property": ["error", { "ignore": ["css"] }],
+		"react/display-name": "off",
+		"react/prop-types": "off",
+		"react/prefer-stateless-function": [0, { "ignorePureComponents": false }],
+		"react/jsx-uses-vars": "warn",
+		"react/jsx-boolean-value": [2, "always"],
+		"react/jsx-key": "error",
+		"react/jsx-no-comment-textnodes": "error",
+		"react/jsx-no-target-blank": "error",
+		"react/jsx-no-undef": "error",
+		"react/no-unused-state": "error",
+		"react/no-direct-mutation-state": "error",
+		"react/self-closing-comp": "error",
+		"react/style-prop-object": "error",
+		"react/static-property-placement": "error",
+		"react/jsx-handler-names": [
+			1,
+			{
+				"checkLocalVariables": true
+			}
+		],
+		//common
+		"no-restricted-globals": ["error", "location", "event", "history"],
+		"react/jsx-uses-react": "off", // React 17
+		"react/react-in-jsx-scope": "off", // React 17
+		"no-unused-vars": "off",
+		"no-empty-function": "off",
+		"no-empty": "error",
+		"no-debugger": "error",
+		"no-console": "error",
+		"getter-return": "error",
+		// "guard"
+		"no-template-curly-in-string": "error",
+		"prefer-template": "error",
+		"curly": "error",
+		"eqeqeq": "error",
+		"guard-for-in": "error",
+		"prefer-const": "error",
+		"default-case-last": "error",
+		"@typescript-eslint/explicit-member-accessibility": "off",
+		"@typescript-eslint/explicit-function-return-type": "off",
+		"@typescript-eslint/explicit-module-boundary-types": "off",
+		"@typescript-eslint/no-explicit-any": "off",
+		"@typescript-eslint/no-namespace": "off",
+		"@typescript-eslint/no-empty-interface": "off",
+		"@typescript-eslint/no-empty-function": "off",
+		"@typescript-eslint/ban-ts-comment": "warn",
+		"@typescript-eslint/no-unused-vars": [
+			2,
+			{
+				"vars": "all",
+				"args": "after-used",
+				"argsIgnorePattern": "^_",
+				"ignoreRestSiblings": true
+			}
+		],
+		"@typescript-eslint/naming-convention": [
+			"error",
+			{
+				"selector": "interface",
+				"format": ["PascalCase"],
+				"prefix": ["I"]
+			},
+			{
+				"selector": "typeLike",
+				"format": ["PascalCase"],
+				"prefix": ["T"]
+			},
+			{
+				"selector": "enum",
+				"format": ["PascalCase"],
+				"prefix": ["E"]
+			},
+			{
+				"selector": "class",
+				"format": ["PascalCase"]
+			}
+		]
+	}
+}

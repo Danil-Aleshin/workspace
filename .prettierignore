@@ -1,0 +1,15 @@
+node_modules/
+*.svg
+*.cur
+.gitignore
+.gitkeep
+.npmrc
+.yarnrc
+.env
+*.ttf
+.rpt2_cache/
+yarn-error.log
+
+CHANGELOG.md
+.eslintcache
+*.lock
