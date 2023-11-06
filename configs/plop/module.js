@@ -108,7 +108,7 @@ const actions = (data) => {
 					name: "widgets",
 					children: [
 						{ name: 'index.ts' },
-						{ name: 'components' },
+						{ name: 'components', children: [] },
 					]
 				},
 				{
@@ -122,15 +122,30 @@ const actions = (data) => {
 				{
 					name: "shared",
 					children: [
-						{ name: 'assets' },
-						{ name: 'components' },
-						{ name: 'lib' },
+						{ name: 'assets', children: [] },
+						{ name: 'components', children: [] },
+						{ name: 'lib', children: [] },
 						{
 							name: 'configs',
-							children: [{
-								name: 'route.config.ts',
-								hasTemplate: true
-							}]
+							children: [
+								{
+									name: 'route',
+									children: [
+										{
+											name: 'route.config.ts',
+											hasTemplate: true
+										},
+										{
+											name: 'index.ts',
+											hasTemplate: true
+										}
+									]
+								},
+								{
+									name: 'index.ts',
+									hasTemplate: true
+								}
+							]
 						},
 						{ name: 'index.ts' },
 					]
