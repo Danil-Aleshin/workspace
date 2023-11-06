@@ -132,7 +132,7 @@ const actions = (data) => {
 									name: 'route',
 									children: [
 										{
-											name: 'route.config.ts',
+											name: 'routes.config.ts',
 											hasTemplate: true
 										},
 										{

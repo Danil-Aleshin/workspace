@@ -1,1 +1,1 @@
-export { getRoutesConfig } from "./route.config";
+export { getRoutesConfig } from "./routes.config";
