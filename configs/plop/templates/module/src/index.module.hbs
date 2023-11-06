@@ -1,0 +1,10 @@
+import { getRoutesConfig } from "./shared/configs";
+import { IModule, Module, registerModule } from "../../../libs/module-expander";
+
+export class {{pascalCase name}}Module extends Module implements IModule {}
+
+defineModule({
+  name: "{{nameOnServer}}",
+  routesConfig: getRoutesConfig,
+})({{pascalCase name}}Module)
+

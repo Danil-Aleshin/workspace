@@ -1,6 +1,7 @@
 node_modules/
 *.svg
 *.cur
+*.hbs
 .gitignore
 .gitkeep
 .npmrc

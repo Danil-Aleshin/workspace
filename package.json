@@ -12,7 +12,8 @@
 		"start": "NODE_ENV=production webpack serve --config webpack.config.cjs",
 		"build": "NODE_ENV=production webpack --mode production --config webpack.config.cjs",
 		"lint": "tsc --noEmit && yarn eslint --cache",
-		"prettier": "prettier --find-config-path --write 'modules/**/*' 'libs/**/*'"
+		"prettier": "prettier --find-config-path --write 'modules/**/*' 'libs/**/*'",
+		"generate": "plop"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.21.8",
