@@ -1,3 +1,10 @@
 [submodule "modules/platform"]
 	path = modules/platform
 	url = git@github.com:Danil-Aleshin/platform.git
+[submodule "modules/cloud-storage"]
+	path = modules/cloud-storage
+	url = git@github.com:Danil-Aleshin/cloud-storage.git
+	branch = develop
+[submodule "packages/cloud-storage"]
+	branch = develop
+	url = ../cloud-storage-pkg.git
