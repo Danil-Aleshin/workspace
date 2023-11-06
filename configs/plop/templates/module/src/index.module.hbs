@@ -4,7 +4,7 @@ import { IModule, Module, registerModule } from "../../../libs/module-expander";
 export class {{pascalCase name}}Module extends Module implements IModule {}
 
 registerModule({
-  name: "{{nameOnServer}}",
+  name: "{{name}}",
   routesConfig: getRoutesConfig,
 })({{pascalCase name}}Module)
 
